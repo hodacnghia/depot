@@ -14,4 +14,4 @@
 //= require jquery-ui/effects/effect-blind
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree ./channels
