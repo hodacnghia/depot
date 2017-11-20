@@ -83,10 +83,11 @@ height: 60px
         border-bottom: 1px dotted #595;
         margin-bottom: 10px;
     }
-    #side #cart {
-        font-size: smaller;
-        color:        white;
-    }
+      #side #cart , #order  a, a:hover {
+            color: white;
+            background-color: #141;
+          }
+    
      #side   ul {
          padding: 0;
      }
@@ -114,4 +115,39 @@ height: 60px
      display: none;
         
      }
-         }
+}
+.depot_form {
+    fieldset {
+      background: #efe;
+   
+      legend {
+        color: #dfd;
+        background: #141;
+        font-family: sans-serif;
+        padding: 0.2em 1em;
+      }
+    }
+   
+    form {
+      label {
+        width: 5em;
+        float: left;
+        text-align: right;
+        padding-top: 0.2em;
+        margin-right: 0.1em;
+        display: block;
+      }
+   
+      select, textarea, input {
+        margin-left: 0.5em;
+      }
+   
+      .submit {
+        margin-left: 4em;
+      }
+   
+      br {
+        display: none
+      }
+    }
+  }
