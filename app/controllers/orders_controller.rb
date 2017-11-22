@@ -41,7 +41,7 @@ class OrdersController < ApplicationController
         session[:order_id] = @order.id
         OrderNotifierMailer.received(@order).deliver_later
         format.html { redirect_to store_index_url, notice:
-        'Thank you for your order.' }
+        I18n.t('.thanks') }        
         format.json { render :show, status: :created,
         location: @order }
 
